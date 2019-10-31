@@ -66,7 +66,7 @@ export class WeatherWidget extends React.Component {
 
     return (
       <div className="widget weather">
-        <div className="heading">Weather</div>
+        <div className="heading">Dirty Mudy Weather</div>
 
         {weatherData.map((day, index) => (
           <div className="group" key={index}>
