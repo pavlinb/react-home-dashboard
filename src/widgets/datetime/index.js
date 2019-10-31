@@ -14,7 +14,6 @@ export class DateTimeWidget extends React.Component {
       const d = new Date();
       let hours = d.getHours();
       let minutes = ("0" + d.getMinutes()).slice(-2);;
-      hours = hours > 12 ? hours - 12 : hours;
       this.setState({
         time: `${hours}:${minutes}`
       });
