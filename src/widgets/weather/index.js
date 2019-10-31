@@ -8,6 +8,7 @@ const getWeather = () => {
     request.get(request_url, (err, resp, body) => {
       if (err) reject(err);
       let data = JSON.parse(body);
+      console.log(data);
       let response = [data.list[1], data.list[9], data.list[17]];
       resolve(response);
     });
